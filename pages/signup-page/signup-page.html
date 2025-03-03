@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up Page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/style/css/signup-screen.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<main>
+			<nav>
+				<div class="nav-section">
+					<div class="logo"><h1>ASU LOGBOOK</h1></div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="col-1"></div>
+				<div class="col-2">
+					<div class="login-header">
+						<div class="header-box">
+							<h1><u>Si</u>g<u>n Up.</u></h1>
+						</div>
+					</div>
+					<div class="login-card">
+						<form class="login-input" action="" method="post">
+							<input
+								type="text"
+								name="username-input"
+								id="username"
+								placeholder="Username"
+							/>
+							<input
+								type="email"
+								name="email-input"
+								id="email"
+								placeholder="Email"
+							/>
+							<input
+								type="password"
+								name="password-input"
+								id="password"
+								placeholder="Password"
+							/>
+							<br />
+							<input type="submit" value="Register" id="submit" />
+							<p>
+								Dont have an account?
+								<a href="/pages/login-page/login-page.html"
+									><span>Log in</span></a
+								>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js"></script>
+		<script type="module" src="/script/signup/signup.js" defer></script>
+	</body>
+</html>

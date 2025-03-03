@@ -27,36 +27,42 @@
 				<div class="col-1">
 					<div class="login-header">
 						<div class="header-box">
-							<h1><u>Lo</u>g<u> in.</u></h1>
+							<h1><u>Si</u>g<u>n In.</u></h1>
 						</div>
 					</div>
 					<div class="login-card">
-						<div class="login-input">
-							<input
-								type="text"
-								name="username-input"
-								id="username-input"
-								placeholder="Username"
-							/>
+						<form class="login-input" action="" method="post">
 							<input
 								type="email"
 								name="email-input"
-								id="email-input"
+								id="email"
 								placeholder="Email"
 							/>
 							<input
-								type="password"
+								type="text"
 								name="password-input"
-								id="password-input"
+								id="password"
 								placeholder="Password"
 							/>
 							<br />
-							<input type="submit" value="Submit" id="submit-btn" />
-						</div>
+
+							<input type="submit" value="Login" id="submit" />
+							<p>
+								Dont have an account?
+								<a href="/pages/signup-page/signup-page.html"
+									><span>Register</span></a
+								>
+							</p>
+						</form>
 					</div>
 				</div>
 				<div class="col-2"></div>
 			</div>
 		</main>
+
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js"></script>
+		<script type="module" src="/script/login/login.js" defer></script>
 	</body>
 </html>

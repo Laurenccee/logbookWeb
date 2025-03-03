@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Logbook Page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/style/css/logbook.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<main>
+			<nav>
+				<div class="nav-section">
+					<div class="logo"><h1>LOGBOOK</h1></div>
+					<div class="user-info">
+						<span id="user-name">Loading...</span>
+						<button id="logout-btn">Logout</button>
+					</div>
+				</div>
+			</nav>
+
+			<div class="container">
+				<div class="col-1">
+					<div class="table-container">
+						<div class="title">
+							<h3>
+								<i class="iconsax" icon-name="presentation-chart"> </i>Timestamp
+								Table
+							</h3>
+						</div>
+						<br />
+						<table>
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Login</th>
+									<th>Logout</th>
+									<th>Hours Worked</th>
+									<th>Condition</th>
+								</tr>
+							</thead>
+							<tbody id="logbook-entries">
+								<tr>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th></th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<br />
+				<div class="col-2">
+					<div class="result-card">
+						<div class="title">
+							<h3>
+								<i class="iconsax" icon-name="activity-square"> </i>Result
+							</h3>
+						</div>
+						<br />
+						<div class="result">
+							<div class="total-hours">
+								<h4 class="result-title">Total Hours:</h4>
+								<h4>0</h4>
+							</div>
+							<div class="hours-remaining">
+								<h4 class="result-title">Hours Remaining:</h4>
+								<h4>0</h4>
+							</div>
+							<div class="days-remaining">
+								<h4 class="result-title">Days Remaining:</h4>
+								<h4>0</h4>
+							</div>
+						</div>
+					</div>
+					<div class="inputs-card">
+						<div class="title">
+							<h3>
+								<i class="iconsax" icon-name="calendar-edit"> </i>Input
+								Timestamp
+							</h3>
+						</div>
+						<br />
+						<div class="inputs">
+							<div class="timestamp-input">
+								<div class="login-input">
+									<input type="time" class="login-input-box" id="login-input" />
+									<br />
+									<input type="button" value="Login" class="login-btn" />
+								</div>
+								<div class="logout-input">
+									<input
+										type="time"
+										class="logout-input-box"
+										id="logout-input"
+									/>
+									<br />
+									<input type="button" value="Logout" class="logout-btn" />
+								</div>
+							</div>
+							<div class="condition-input">
+								<div class="dropdown">
+									<button class="dropdown-btn">
+										<strong>Regular</strong>
+										<span class="arrow">&#9662;</span>
+									</button>
+									<div class="dropdown-content">
+										<a href="#">Double Hours</a>
+										<a href="#">Absent</a>
+										<a href="#">Penalty</a>
+										<a href="#">Halfday</a>
+										<a href="#">Holiday</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="condition-card"></div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js"></script>
+
+		<script type="module" src="/script/logbook/logbook.js" defer></script>
+	</body>
+</html>

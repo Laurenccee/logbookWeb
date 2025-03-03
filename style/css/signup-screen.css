@@ -20,13 +20,6 @@ body main nav .nav-section {
   padding: 1% 5%;
   background-color: aqua;
 }
-body main nav .nav-section .user-info {
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: auto;
-  padding: 10px;
-  color: #333;
-}
 body main .container {
   padding: 0 5%;
   flex: auto;
@@ -34,6 +27,10 @@ body main .container {
   flex-direction: row;
 }
 body main .container .col-1 {
+  height: 100%;
+  flex: 3;
+}
+body main .container .col-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,18 +38,18 @@ body main .container .col-1 {
   height: 100%;
   flex: 1;
 }
-body main .container .col-1 .login-header {
+body main .container .col-2 .login-header {
   display: flex;
   width: 100%;
 }
-body main .container .col-1 .login-header .header-box {
+body main .container .col-2 .login-header .header-box {
   padding: 0 1%;
   background-color: #f2fed1;
 }
-body main .container .col-1 .login-header .header-box h1 {
+body main .container .col-2 .login-header .header-box h1 {
   font-size: 3rem;
 }
-body main .container .col-1 .login-card {
+body main .container .col-2 .login-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,14 +58,14 @@ body main .container .col-1 .login-card {
   width: 100%;
   gap: 10%;
 }
-body main .container .col-1 .login-card .login-input {
+body main .container .col-2 .login-card .login-input {
   display: flex;
   gap: 4%;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
-body main .container .col-1 .login-card .login-input input {
+body main .container .col-2 .login-card .login-input input {
   font-size: 18px;
   font-weight: 500;
   height: 15%;
@@ -78,22 +75,18 @@ body main .container .col-1 .login-card .login-input input {
   box-shadow: 0 4px #000;
   outline: none;
 }
-body main .container .col-1 .login-card .login-input p {
+body main .container .col-2 .login-card .login-input p {
   font-size: larger;
 }
-body main .container .col-1 .login-card .login-input p a {
+body main .container .col-2 .login-card .login-input p a {
   color: #000;
 }
-body main .container .col-1 .login-card .login-input p a span {
+body main .container .col-2 .login-card .login-input p a span {
   background-color: #abf600;
   padding: 0.5% 2%;
   font-weight: bolder;
   border-radius: 5px;
 }
-body main .container .col-1 .login-card .login-input p a:hover {
+body main .container .col-2 .login-card .login-input p a:hover {
   text-decoration: none;
-}
-body main .container .col-2 {
-  height: 100%;
-  flex: 3;
-}/*# sourceMappingURL=login-screen.css.map */
+}/*# sourceMappingURL=signup-screen.css.map */
